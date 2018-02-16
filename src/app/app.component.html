@@ -1,3 +1,11 @@
 <h1>
   {{title}}
 </h1>
+<br>
+<button *ngIf="!login" (click)="loginWithFB()"> Login con Facebook</button>
+<br>
+<div *ngIf="login">
+<label>{{name}}</label>
+  <br>
+<img src="{{pic_url}}" />
+</div>
